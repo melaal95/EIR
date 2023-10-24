@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:siemens:names:prov:gw:SPML:2:0">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <spml:searchRequest
+                xmlns:spml="urn:siemens:names:prov:gw:SPML:2:0"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:dev="urn:siemens:names:prov:gw:EIR_NSR:1:0">
+            <version>EIR_NSR_v30</version>
+            <base>
+                <objectclass>Device</objectclass>
+                <alias name ="identifier" value="$imei$"/>
+            </base>
+        </spml:searchRequest>
+
+    </soapenv:Body>
+</soapenv:Envelope>
